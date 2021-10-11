@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.front-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.base {
+  width: 35%;
+  background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
+}
+
+.top-bar {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.links a {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1vw;
+  text-decoration: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+
+  color: #6a707b;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-top: 30vh;
+}
+
+.heading,
+.subheading,
+.terms-of-services,
+.line {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.heading h1 {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #131821;
+}
+
+.subheading {
+  margin-top: 3vh;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6a707b;
+}
+.email-input,
+.terms-of-services,
+.line,
+.social-icons {
+  margin-top: 5vh;
+}
+
+.email-input form input {
+  background: #ffffff;
+  border: 1px solid #e3e3e4;
+  border-left: 4px solid #4066a5;
+  width: 30vw;
+  height: 5vh;
+  margin-left: 3vw;
+  text-indent: 2vw;
+}
+
+.validation-box {
+  width: 30vw;
+  margin-left: 3vw;
+  text-align: center;
+}
+
+.email-input form input:hover {
+  border: 1px solid #4066a5;
+  border-left: 4px solid #4066a5;
+}
+.email-input form {
+  position: relative;
+}
+
+#arrow {
+  position: absolute;
+  right: 3vw;
+  top: 2vh;
+  color: #6a707b;
+}
+.terms-of-services a {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-decoration-line: underline;
+  color: #131821;
+}
+
+.terms-of-services {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6a707b;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: 1vh;
+
+  vertical-align: middle;
+}
+
+.image {
+  height: 100%;
+  width: 65%;
+  right: 0;
+}
+
+.responsive-image {
+  height: fit-content;
+}
+
+.merge-icons {
+  display: flex;
+
+  padding: 1vh;
+  color: #e2e3e4;
+  border: 2px solid #e2e3e4;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.facebook:hover {
+  background-color: #4267b2;
+  border-color: #4267b2;
+  color: #fff;
+}
+.instagram:hover {
+  background-color: #c13584;
+  border-color: #c13584;
+  color: #fff;
+}
+.twitter:hover {
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+  color: #fff;
+}
+.youtube:hover {
+  background-color: #ff0000;
+  border-color: #ff0000;
+  color: #fff;
+}
+.facebook:active {
+  background-color: #2f4a80;
+  border-color: #2f4a80;
+  color: #fff;
+}
+.instagram:active {
+  background-color: #8f2762;
+  border-color: #8f2762;
+  color: #fff;
+}
+.twitter:active {
+  background-color: #177fbf;
+  border-color: #177fbf;
+  color: #fff;
+}
+.youtube:active {
+  background-color: #cc0000;
+  border-color: #cc0000;
+  color: #fff;
+}
+.arrwo {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  * {
+    align-items: center;
+  }
+  .base {
+    vertical-align: middle;
+    margin: 10vh 3vw 10vw 3vh;
+    width: 90%;
+  }
+
+  .front-page {
+    margin: 0;
+  }
+
+  .top-bar {
+    margin: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
+    width: 100%;
+  }
+
+  .links {
+    font-size: 14px;
+  }
+
+  .heading {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 3vh 2vw 1vh;
+  }
+
+  .subheading {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    margin: 1vh 0 3vh;
+  }
+  .subheading,
+  .terms-of-services,
+  .line,
+  .email-input {
+    margin: 1vh 2vw 1vh;
+  }
+
+  .email-input form input {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .email-input form {
+    position: relative;
+  }
+
+  #arrow {
+    position: absolute;
+    right: 2vw;
+    top: 2vh;
+    color: #6a707b;
+  }
+
+  .content {
+    display: contents;
+  }
+  .front-page {
+    background-image: url("/Design/image_summer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .image {
+    display: none;
+  }
+}
